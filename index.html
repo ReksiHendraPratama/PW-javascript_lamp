@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampu dengan Javascript</title>
+</head>
+<body>
+
+<div style="text-align: center;">
+    <h1>Program JavaScript untuk Mematikan atau Menghidupkan Lampu</h1> 
+    <img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+
+    <p>Klik Lampu untuk Mematikan/Menghidupkannya</p>  
+</div>
+    <script> 
+    function changeImage() { 
+      var image = document.getElementById('myImage'); 
+      if (image.src.match("bulbon")) { 
+        image.src = "pic_bulboff.gif"; 
+      } else { 
+        image.src = "pic_bulbon.gif"; 
+      } 
+    } 
+    </script> 
+</body>
+</html>
